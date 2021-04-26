@@ -18,7 +18,7 @@ jobs:
           - ubuntu-latest
           # - macos-latest
         formula:
-          - cwq-qr
+          - cwa-qr
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
