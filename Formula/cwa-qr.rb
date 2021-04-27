@@ -5,29 +5,29 @@
 class CwaQr < Formula
   desc "QR-Code generator for checking into events using the Corona Warn App"
   homepage "https://github.com/lukasmalkmus/cwa-qr"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.1.0/cwa-qr_0.1.0_darwin_amd64.tar.gz"
-    sha256 "27eead631a637eb367b8d52d3e15cbf950fd445c5e92799c9f491ed33644d82a"
+    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.2.0/cwa-qr_0.2.0_darwin_amd64.tar.gz"
+    sha256 "0d00ace72542ddead6db49523edab3e6f425461bb975c748ceb162d3f1e88644"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.1.0/cwa-qr_0.1.0_darwin_arm64.tar.gz"
-    sha256 "a46d64e50d8d682c35eb5d59c3a7c4d20a3451ef29b0031fe72ad2f13efd2651"
+    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.2.0/cwa-qr_0.2.0_darwin_arm64.tar.gz"
+    sha256 "364af1853ebb3080cdeb73278ca356dcc522c64a33dab7c9d833935086b54dba"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.1.0/cwa-qr_0.1.0_linux_amd64.tar.gz"
-    sha256 "da5b8424abee453c703bffd967f4c41894eafcc4fea331ac406a8c4a795987d4"
+    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.2.0/cwa-qr_0.2.0_linux_amd64.tar.gz"
+    sha256 "5577ef84d23953f8923f70db25ef42bbb9b4bd4250d900eb4b50ebad707aec08"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.1.0/cwa-qr_0.1.0_linux_armv6.tar.gz"
-    sha256 "e0d5388f03cd7c680ba43ade071cf103bc38e37624187962d57f026f64f8db1d"
+    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.2.0/cwa-qr_0.2.0_linux_armv6.tar.gz"
+    sha256 "bfa1a3c3952726639e0b60e922feefc0566b81ae341051d35e0bbca7da06724f"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.1.0/cwa-qr_0.1.0_linux_arm64.tar.gz"
-    sha256 "2faa41312f5329690af9fe979d2269be6987c07ec830506794d1d51750f1c3c3"
+    url "https://github.com/lukasmalkmus/cwa-qr/releases/download/v0.2.0/cwa-qr_0.2.0_linux_arm64.tar.gz"
+    sha256 "a881172a9e97789a8a3ac2819f33165a6fa243ca4d0047201944225b270869d7"
   end
 
   def install
