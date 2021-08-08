@@ -1,4 +1,4 @@
-name: brew
+name: Test
 
 on:
   push:
@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  build:
-    name: build
+  test:
+    name: Test
     strategy:
       fail-fast: false
       matrix:
@@ -19,14 +19,11 @@ jobs:
           # - macos-latest
         formula:
           - cwa-qr
+          - horcrux
     runs-on: ${{ matrix.os }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-
+      - uses: actions/checkout@v2
+      - uses: Homebrew/actions/setup-homebrew@master
       - name: Install Formula ${{ matrix.formula }}
         run: |
           brew audit ${{ matrix.formula }}
