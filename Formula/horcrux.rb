@@ -5,33 +5,33 @@
 class Horcrux < Formula
   desc "Security question based secret sharing utility"
   homepage "https://github.com/lukasmalkmus/horcrux"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.1.0/horcrux_0.1.0_darwin_amd64.tar.gz"
-      sha256 "23a2e5b759f65d8debd0a0e8470437de86dd37b7a8973e05d3270dd98d4f0632"
+      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.2.0/horcrux_0.2.0_darwin_amd64.tar.gz"
+      sha256 "297122560b1c8f0145659489269f3fb1710701f1175bf6e1d3b6ed66e11a520f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.1.0/horcrux_0.1.0_darwin_arm64.tar.gz"
-      sha256 "891dfcc13c9d1f898d3380cdd9929b49deb95b34a4b85d02a8c67d506279826c"
+      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.2.0/horcrux_0.2.0_darwin_arm64.tar.gz"
+      sha256 "79fc3a95b5234a48c4c0c0913517f6a3f452edcaad15f1b0a6d66adbf2966d15"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.1.0/horcrux_0.1.0_linux_amd64.tar.gz"
-      sha256 "869957723c3646c373c71058fdfd3e7665ed7445e9918c9c01a439ae121d693f"
+      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.2.0/horcrux_0.2.0_linux_amd64.tar.gz"
+      sha256 "5d8218e5a4256b7c1282053ceb49316ad1a183fe5789955f6743cf54f8bc9d3b"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.1.0/horcrux_0.1.0_linux_armv6.tar.gz"
-      sha256 "026fbce8d7741a7619e4fbb13bd08dc6ba0d264c0448ff594bb4503cf3f8ae10"
+      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.2.0/horcrux_0.2.0_linux_armv6.tar.gz"
+      sha256 "a265029fdf8763d5557e217246fb072d83e480045582a32b68669b21cc82dc86"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.1.0/horcrux_0.1.0_linux_arm64.tar.gz"
-      sha256 "7cf985081b95c33aa6298c4400188ea1eef89694c4241a26970f3e39ff349873"
+      url "https://github.com/lukasmalkmus/horcrux/releases/download/v0.2.0/horcrux_0.2.0_linux_arm64.tar.gz"
+      sha256 "99fe9304208b8ecf64945a351990ed70c1e21e7b0b4aaf00ad2ad5ba535bd616"
     end
   end
 
