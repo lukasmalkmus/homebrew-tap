@@ -19,7 +19,7 @@ jobs:
           # - macos-latest
         formula:
           - cwa-qr
-          - horcrux
+          - crux
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2

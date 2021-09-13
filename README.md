@@ -48,7 +48,7 @@ please fill an issue in the upstream repository.
 
 ## License
 
-&copy; Lukas Malkmus, 2020
+&copy; Lukas Malkmus, 2021
 
 Formulas are licensed individually, depending on the license their upstream
 repository declares. Check the `<formula>.rb` files.
